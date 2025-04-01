@@ -1,14 +1,6 @@
 import Link from "next/link"
 import * as React from "react"
 
-const journals = {
-    "minimum-standards": {
-        title: "Minimum Standards",
-        date: "19 June 2024",
-        content: "..."
-    },
-    // more entries...
-}
 
 const JournalList = () => {
     return (
