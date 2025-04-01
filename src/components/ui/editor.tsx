@@ -8,18 +8,26 @@
     } from '@tiptap/react'
     import StarterKit from '@tiptap/starter-kit'
     import React, { useEffect } from 'react'
+    import Placeholder from '@tiptap/extension-placeholder'
     
     export default () => {
-      const editor = useEditor({
-        extensions: [
-          StarterKit,
-        ],
-        content: `
-          <p>Let's write something</p>
-    
-          <p></p>
-        `,
-      })
+        const editor = useEditor({
+          extensions: [
+            StarterKit,
+            Placeholder.configure({
+              // Use a placeholder:
+              placeholder: 'Write something …',
+              // Use different placeholders depending on the node type:
+              // placeholder: ({ node }) => {
+              //   if (node.type.name === 'heading') {
+              //     return 'What’s the title?'
+              //   }
+      
+              //   return 'Can you add some further context?'
+              // },
+            }),
+          ],
+        })
     
       const [isEditable, setIsEditable] = React.useState(true)
     

@@ -28,13 +28,18 @@ export default function JournalPage() {
                 </div>            
             
                 <div className="self-stretch flex flex-col justify-start items-start gap-4">
-                    <div className="self-stretch flex flex-col justify-start items-start gap-2">
-                        <div className="self-stretch inline-flex justify-start items-center gap-2">
-                            <Input 
+                    {/* <Input 
+                        type="text" 
+                        placeholder="Title" 
+                        className="self-stretch px-3 py-2.5 bg-background rounded-md outline outline-1 outline-offset-[-1px] outline-zinc-400 inline-flex justify-start items-center overflow-hidden focus:outline-ring/50 focus:outline-2 text-neutral-900 text-sm font-normal font-['Helvetica_Neue'] leading-tight"
+                    /> */}
+
+                    <div className="self-stretch inline-flex justify-start items-center gap-2">
+                        <div className="flex-1 px-3 py-2.5 bg-background rounded-md outline outline-1 outline-offset-[-1px] outline-zinc-400 flex justify-start items-center overflow-hidden">
+                            <input 
                                 type="text" 
                                 placeholder="Title" 
-                                className="flex-1 px-3 py-2.5 bg-background rounded-md outline outline-1 outline-offset-[-1px] outline-zinc-400"
-                            />
+                                className="flex-1 justify-start text-neutral-900 text-sm font-normal font-['Helvetica_Neue'] leading-tight focus:outline-none focus:ring-0 focus:ring-offset-0" />
                         </div>
                     </div>
 
