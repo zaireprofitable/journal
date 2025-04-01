@@ -6,4 +6,5 @@
 
 i think i'll add word count next, then start working on setting the editor up to create database entries once a user creates a post longer than 4 characters + title.
 
-i'd like to add a wordcounter before i go to sleep, currently 2:09 am
+i'd like to add a wordcounter before i go to sleep, currently 2:09 am. yea maybe not. refer to this chat tomorrow so you can implement this feature to the app: https://claude.ai/share/053d9330-e276-4bc0-8043-0bcdebde8b4d
+
