@@ -8,3 +8,16 @@ i think i'll add word count next, then start working on setting the editor up to
 
 i'd like to add a wordcounter before i go to sleep, currently 2:09 am. yea maybe not. refer to this chat tomorrow so you can implement this feature to the app: https://claude.ai/share/053d9330-e276-4bc0-8043-0bcdebde8b4d
 
+--- 
+
+same day, just not at midnight
+
+fixed the floating menu hover state, the colors, and positioning, everything works now. made some tweaks to the styling for the editor, need to clean up the focus state
+
+-- making the publish button dynamic.
+
+started learning some basics around state variables [https://claude.ai/share/b70b8e20-79cf-4b9c-824f-18f54c76e9a3]
+
+my interpretation is we use them so our program can use memory to intuitively understand when something is updated in the app. this saves us having to create multiple functions to take information from one function, storing it and creating another function to utilise said information
+
+"Grade: A"
