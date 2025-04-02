@@ -9,6 +9,14 @@ import StarterKit from '@tiptap/starter-kit'
 import React, { useEffect } from 'react'
 import Placeholder from '@tiptap/extension-placeholder'
 
+
+interface JournalEntry {
+    slug: string;
+    title: string;
+    content: string;
+    date: string;
+  }
+
 // Add props to the component
 interface EditorProps {
   onChange?: (content: string) => void;
@@ -20,6 +28,10 @@ export default ({ onChange }: EditorProps) => {
         StarterKit,
         Placeholder.configure({
           placeholder: 'Write something …',
+          showOnlyWhenEditable: true,
+          showOnlyCurrent: true,
+          emptyEditorClass: 'is-editor-empty',
+          emptyNodeClass: 'is-node-empty',
         }),
       ],
       onUpdate: ({ editor }) => {
