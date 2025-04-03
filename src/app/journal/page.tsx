@@ -79,7 +79,7 @@ export default function JournalPage() {
                                 placeholder="Title" 
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
-                                className="flex-1 justify-start text-neutral-900 text-sm font-normal font-['Helvetica_Neue'] leading-tight focus:outline-none focus:ring-0 focus:ring-offset-0" />
+                                className="editor-title flex-1 justify-start text-neutral-900 text-sm font-normal font-['Helvetica_Neue'] leading-tight focus:outline-none focus:ring-0 focus:ring-offset-0" />
                         </div>
                     </div>
 

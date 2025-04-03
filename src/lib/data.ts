@@ -27,10 +27,10 @@ export async function getJournalEntries() {
 }
 
 // Helper functions we might need later
-export function getJournalBySlug(slug: string): JournalEntry | undefined {
+export async function getJournalBySlug(slug: string): JournalEntry | undefined {
     return journalEntries[slug];
 }
 
-export function getAllJournals(): JournalEntry[] {
+export async function getAllJournals(): JournalEntry[] {
     return Object.values(journalEntries);
 }

@@ -146,6 +146,7 @@ input {
 .prose-container {
   min-height: 300px;
   background: white;
+  color: var(--black);
 }
 
 .ProseMirror {
@@ -167,12 +168,14 @@ input {
 .tiptap ol {
   padding: 0 1rem;
   margin: 1.25rem 1rem 1.25rem 0.4rem;
+  color: #000000;
 }
 
 .tiptap ul li p,
 .tiptap ol li p {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
+  color: #000000;
 }
 
 /* Heading styles */
@@ -185,6 +188,8 @@ input {
   line-height: 1.1;
   margin-top: 2.5rem;
   text-wrap: pretty;
+  font-family: 'Hedvig Letters Serif', serif;
+  font-weight: bold;
 }
 
 .tiptap h1,
@@ -302,4 +307,9 @@ input {
   float: left;
   height: 0;
   pointer-events: none;
+}
+
+.editor-title {
+  font-family: 'Hedvig Letters Serif', serif;
+  font-size: 1rem;
 }
